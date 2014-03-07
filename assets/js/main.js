@@ -17,6 +17,7 @@ $(document).ready(function(){
     $('#time').addClass('bounceIn').show();
     $(this).addClass('bounceOutLeft').hide();
     $btnRestart.addClass('bounceInRight').show();
+    highscore();
   });
 
   $btnRestart.click(function(){
@@ -40,7 +41,15 @@ function shouldWeparty() {
       $('.celebrate').addClass('lightSpeedIn').show();
     } else {
       if (ms > 4000 && ms < 5000) {
-        $('.celebrate').text('Close! Within 1 second!').addClass('lightSpeedIn').show();
+        var dway = 5000 % ms;
+        $('.celebrate').text('Close! Within ' + dway + ' ms!').addClass('lightSpeedIn').show();
+      }
+      if (ms > 3000 && ms < 4000 || ms > 6000 && ms < 7000 ) {
+        $('.celebrate').text('Close! Within 2 seconds!').addClass('lightSpeedIn').show();
+      }
+      if (ms > 5000) {
+        var dway = ms % 5000;
+        $('.celebrate').text('Close! You went over ' + dway + ' ms!').addClass('lightSpeedIn').show();
       }
     }
 }
@@ -51,4 +60,9 @@ function difficulty() {
   } else {
     $('#time').fadeOut(2234);
   }
+}
+
+function highscore() {
+  var hs = 5000 % ms;
+  console.log(hs);
 }
