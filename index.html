@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bttn.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+  <title>5 Second Game</title>
+</head>
+<body>
+
+<h3 class="center">Try to stop the timer at 5 seconds!</h3>
+
+  <select class="center" id="difficulty">
+    <option>Hard</option>
+    <option>Easy</option>
+  </select>
+
+  <br />
+
+  <div class="timer center">
+    <h1><span id="time" class="animated"><span id="timing"></span><i> ms</i></span></h1>
+  </div>
+
+  <br />
+
+  <div class="center stay-put">
+    <button class="bttn bttn-success bttn-large bttn-splat animated">Start</button>
+    <button class="none bttn bttn-danger bttn-large animated" onclick="stop();">Stop</button>
+    <button class="none bttn bttn-warning bttn-large animated" onclick="reset();">Reset</button>
+  </div>
+  <br />
+
+  <h5 class="none center celebrate animated">Woohoo!</h5>
+
+  <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+  <script src="assets/js/stopwatch.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

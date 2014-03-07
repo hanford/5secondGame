@@ -1,0 +1,43 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: #555;
+  color: #FFF;
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+.center {
+  text-align: center;
+}
+
+.timer {
+  font-size: 56px;
+  width: 100%;
+  height: 205px;
+}
+
+.none {
+  display: none;
+}
+
+.stay-put {
+  position: relative;
+}
+
+select {
+  margin-left:auto;
+  margin-right:auto;
+  margin-left:47.5%;
+}
+
+i {
+  font-size: .5em;
+  font-style: italic;
+  font-family: 'Helvetica';
+  margin-left: -10px;
+}
