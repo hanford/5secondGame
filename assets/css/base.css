@@ -35,9 +35,17 @@ select {
   margin-left:47.5%;
 }
 
-i {
+.ms {
   font-size: .5em;
   font-style: italic;
   font-family: 'Helvetica';
   margin-left: -10px;
+}
+
+.home-bttn {
+    font-size: 40px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: rgba(255,255,255,0.5);
 }
