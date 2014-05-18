@@ -54,8 +54,18 @@ select {
   
 }
 
+.tweet-bttn {
+  left: 47%;
+  position: relative;
+  padding-top: 10px;
+}
+
 @media only screen and (max-width: 480px) {
 body {
   margin-top: 60px;
-}
+  }
+
+  .tweet-bttn {
+    left: 40%;
+  }
 }
