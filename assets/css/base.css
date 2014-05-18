@@ -49,3 +49,13 @@ select {
     left: 10px;
     color: rgba(255,255,255,0.5);
 }
+
+.highscore {
+  
+}
+
+@media only screen and (max-width: 480px) {
+body {
+  margin-top: 60px;
+}
+}
