@@ -59,7 +59,7 @@ function cookieGrab() {
   $.cookie();
 
   score = $.cookie('score');
-  distance = $.cookie('distance_from_5');
+  distance = $.cookie('distance_from_5', { path: '/' });
 
   if (score === undefined) {
     console.log('No cookie');
