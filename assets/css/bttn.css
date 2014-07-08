@@ -1,6 +1,7 @@
 /* Jack's buttons! */
 button,
 .reset-anchor {
+	display: inline-block;
   background: none repeat scroll 0 0 transparent;
   border: medium none;
   border-spacing: 0;
@@ -140,6 +141,7 @@ button,
 }
 
 a.bttn {
+	display: inline-block;
   padding: 8px 13px;
 }
 
