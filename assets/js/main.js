@@ -51,7 +51,7 @@ function highscore() {
   console.log(hs, ms);
   if (hs < distance) {
     $.cookie('score', ms);
-    $.cookie('distance_from_5', hs); 
+    $.cookie('distance_from_5', hs);
   }
 }
 
