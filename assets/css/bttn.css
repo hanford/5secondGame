@@ -1,6 +1,7 @@
 /* Jack's buttons! */
 button,
 .reset-anchor {
+	display: inline-block;
   background: none repeat scroll 0 0 transparent;
   border: medium none;
   border-spacing: 0;
@@ -27,22 +28,15 @@ button,
 }
 
 .bttn:hover {
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.27);
-  transition: all 0.1s ease-in-out;
+  transform: scale(.98);
+	-webkit-transform: scale(.98);
 }
 
 .bttn:active {
-  background-color: #A4B4BF;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.125);
+	transform: scale(.94);
+	-webkit-transform: scale(.94);
 }
 
-.bttn-splat:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 3px;
-  outline: 5px solid #c7dcfc;
-}
 
 .bttn-small {
   padding: 2px 8px;
@@ -147,5 +141,16 @@ button,
 }
 
 a.bttn {
+	display: inline-block;
   padding: 8px 13px;
+}
+
+a.bttn:hover {
+	transform: scale(.98);
+	-webkit-transform: scale(.98);
+}
+
+a.bttn:active {
+	transform: scale(.94);
+	-webkit-transform: scale(.94);
 }
